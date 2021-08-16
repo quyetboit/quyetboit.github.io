@@ -1,0 +1,242 @@
+/* Tablet height resolution & Mobile  */
+@media (max-width: 1300px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    .header {
+        padding-top: 150%;
+    }
+    .header-nav {
+        background-color: #555;
+    }
+    .header__menu-on-tablet-mobile {
+        --width: 330px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: var(--width);
+        max-width: 100%;
+        padding: 40px;
+        background-color: #555;
+        color: var(--white-color);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        z-index: 1;
+        overflow-y: auto;
+        opacity: 0;
+        transform: translateX(330px);
+        transition: opacity linear 0.5s, transform linear 0.5s, visibility linear 0.5s;
+    }
+    #menu-wrap-item--show:checked ~ .header__menu-on-tablet-mobile {
+        transform: translateX(0);
+        opacity: 1;
+        display: block;
+        visibility: unset;
+    }
+    .menu-on-tablet-mobile__close-icon {
+        position: absolute;
+        display: inline-block;
+        line-height: 0;
+        padding: 5px;
+        top: 15px;
+        right: 20px;
+    }
+    .menu-on-tablet-mobile__close-icon ion-icon {
+        font-size: 4rem;
+    }
+    .menu-on-tablet-mobile__head {
+        font-size: 2.4rem;
+        line-height: 3.4rem;
+    }
+    .menu-on-tablet-mobile__l1-title {
+        font-size: 2.4rem;
+        line-height: 3.4rem;
+        margin-top: 30px;
+        text-decoration: none;
+        color: var(--white-color);
+        font-weight: 700;
+    }
+    .menu-on-tablet-mobile__l1-list {
+        list-style: none;
+        padding-left: 20px;
+        line-height: 3.4rem;
+    }
+    .menu-on-tablet-mobile__l1-item {
+        font-size: 1.4rem;
+    }
+    .menu-on-tablet-mobile__l1-link,
+    .menu-on-tablet-mobile__l2-link {
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        color: var(--white-color);
+    }
+    .menu-on-tablet-mobile__l2-list {
+        list-style: none;
+    }
+    .menu-on-tablet-mobile__l2-item {
+        padding-left: 20px;
+    }
+    .destination__packetages {
+        margin-top: 24px;
+    }
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    .header-search {
+        width: 90%;
+    }
+    .header-search__wrap-search {
+        width: 100%;
+    }
+    .header-search__combobox {
+        --height: 46px;
+        width: 100%;
+        padding: 15px 25px;
+        border-radius: 30px;
+        font-size: 1.6rem;
+    }
+    .header-search__btn {
+        top: 58%;
+        right: 10px;
+    }
+    .header-search__list-activities {
+        flex-direction: column;
+    }
+    .header-search__list-item + .header-search__list-item {
+        margin-left: 0;
+    }
+    .header-search__list-item {
+        padding: 15px;
+    }
+    .header-search__item-link {
+        width: 100%;
+    }
+    .container__holiday {
+        padding: 20px;
+    }
+    .beaches__detail {
+        height: 400px;
+        margin-top: 50px;
+    }
+    .beaches__detail-time {
+        transform: translateY(100%);
+    }
+    .beaches__tour {
+        margin-top: 160px;
+    }
+    .beaches__tour-descript {
+        margin: 14px 0;
+    }
+    .beaches__tour-item {
+        margin-top: 20px;
+    }
+    .promotions__packages {
+        margin-top: 30px;
+    }
+    .promotions__packages-detail {
+        width: 100%;
+    }
+    .footer__message {
+        margin-top: 20px;
+    }
+    .footer__input {
+        flex: 1;
+        margin-right: 30px;
+    }
+}
+
+/* Tablet */
+@media (min-width:740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .header {
+        padding-top: 1200px;
+    }
+    .header-search__wrap-search {
+        margin-top: 30px;
+    }
+    .header-search__combobox {
+        background-color: var(--white-color);
+        min-width: unset;
+    }
+    .header-search__list-item {
+        padding: 6px 15px;
+    }
+    .header-search__item-link {
+        padding: 10px 20px;
+    }
+    .header-nav {
+        padding: 0 20px;
+    }
+    .destination__packetages {
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+    .holiday__btn-link {
+        width: 100%;
+    }
+    .container__beaches {
+        padding: 0 20px;
+    }
+    .beaches__old-price,
+    .beaches__new-price {
+        font-size: 3.2rem; 
+    }
+    .beaches__detail {
+        height: 200px;
+    }
+    .beaches__tour {
+        margin-top: 570px;
+    }
+    .sparate-time::before {
+        content: "";
+        position: absolute;
+        border-bottom: 1px solid white;
+        width: 100%;
+        opacity: 1;
+        top: 0;
+        right: 0;
+        left: 0
+    }
+    .container__promotions {
+        padding: 0 20px;
+    }
+    .footer {
+        padding: 0 30px;
+    }
+    .footer__message {
+        flex-direction: column;
+    }
+    .footer__input {
+        margin: 0;
+        width: 100%;
+    }
+    .footer__btn {
+        margin-top: 8px;
+        width: 100%;
+        text-align: center;
+    }
+    .footer__foot p {
+        text-align: center;
+        width: 100%;
+    }
+    .destination__packetages-infor {
+        right: 20px;
+        left: 20px;
+        width: unset;
+    }
+}
